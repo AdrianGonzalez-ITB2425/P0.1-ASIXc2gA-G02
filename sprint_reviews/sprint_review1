@@ -1,123 +1,144 @@
-# 📋 ACTA DE REUNIÓN - SPRINT 1
+# ACTA DE REUNIÓ - SPRINT 1
 
-**Proyecto:** Extagram G2  
-**Fecha:** 19 de Enero, 2026  
-**Hora:** 15:29 CET  
+**Projecte:** Extagram G2  
+**Data:** 19 de gener de 2026  
+**Hora:** 15:29 
 
 ---
 
-## 👥 ASISTENTES
+## ASSISTENTS
 
 Javier  
+
 Marc  
+
 Adrián  
 
 ---
 
-## ✅ TAREAS COMPLETADAS
+## TASQUES COMPLETADES
 
-### 1. Crear repositorio GitHub ✅
-Repositorio creado y configurado.  
-Control de versiones establecido.  
-Acceso compartido entre el equipo.  
+### 1. Crear repositori GitHub 
 
-### 2. Organizar IT Sprint ✅
-Sprint 1 planificado y ejecutado.  
-Tareas asignadas y revisadas.  
-Metodología ágil puesta en marcha.  
+Repositori creat i configurat.  
 
-### 3. Crear llaves SSH personales ✅
-SSH keys generadas para cada miembro.  
-Acceso seguro a la instancia configurado.  
+Control de versions establert.  
 
-### 4. Crear la instancia a AWS ✅
-Instancia Ubuntu en AWS EC2 creada.  
-Disco de 8 GB configurado.  
-Security Groups abiertos en puertos 22, 80 y 443.  
-Firewall UFW activado.  
+Accés compartit entre l’equip.  
 
-### 5. Configuraciones principales de la instancia de AWS ✅
-LAMP Stack instalado (Apache, MySQL, PHP).  
-Base de datos extagram_db creada.  
-Usuario extagram_admin configurado.  
-Tabla posts creada con campos id, post_text, photourl, created_at, user_ip.  
+### 2. Organitzar l’IT Sprint 
 
-### 6. Desarrollo de la aplicación web ✅
-**Archivos principales:**
+Sprint 1 planificat i executat.  
 
-index.php – Landing page + feed de publicaciones.  
-upload.php – Lógica de subida de posts con imagen.  
-config.php – Configuración de BD y constantes de seguridad.  
-admin.php – Panel de administración.  
-delete.php – Borrado de publicaciones.  
-css/style.css – Diseño premium minimalista.  
-js/script.js – Lógica de frontend (preview, validaciones, avisos).  
-assets/preview.svg – Icono de previsualización.  
-uploads/.htaccess – Protección del directorio de subidas.  
+Tasques assignades i revisades.  
 
-**Funcionalidades implementadas:**
+Metodologia àgil en funcionament.  
 
-Creación de posts con texto e imagen.  
-Previsualización de la imagen antes de publicar.  
-Validación de tamaño (máx. 5 MB) y tipo (solo imágenes).  
-Feed de las últimas publicaciones (ordenado por fecha).  
-Diseño responsive y moderno.  
+### 3. Crear claus SSH personals 
 
+Claus SSH generades per a cada membre.  
 
+Accés segur a la instància configurat.  
 
+### 4. Crear la instància a AWS 
 
----
+Instància Ubuntu a AWS EC2 creada.  
 
-## TAREAS PENDIENTES (BACKLOG)
+Disc de 8 GB configurat.  
 
-### 1. Asignar tareas no finalizadas🔵
-3 subtareas.  
-Estimación corta (≈20 minutos).  
-Se completará al inicio del próximo sprint para repartir claramente las nuevas historias de usuario.  
+Security Groups oberts als ports 22, 80 i 443.  
 
-### 2. Panel de administración y gestión de posts 🔵 
-Login de administrador con contraseña.  
-Estadísticas básicas: total posts, posts con imagen, posts de hoy.  
-Listado de todas las publicaciones.  
-Borrado de posts (elimina registro en BD y archivo de imagen).  
-Logout de sesión de admin.  
----
+Firewall UFW actiu.  
 
-## 📊 RESUMEN EJECUTIVO
+### 5. Configuracions principals de la instància d’AWS 
 
-| Categoría                | Valor      |
-|--------------------------|-----------:|
-| Tareas completadas       | 6          |
-| Tareas pendientes        | 2        |
-| Porcentaje completado    | 87.5 %     |
-| Archivos de código clave | 9          |
-| Funcionalidad core       | 100 %      |
+LAMP Stack instal·lat (Apache, MySQL, PHP).  
 
-**Estado del proyecto:** ✅ Sprint 1 completado con éxito, aplicación funcional y desplegada.
+Base de dades **extagram_db** creada.  
+
+Usuari **extagram_admin** configurat.  
+
+Taula **posts** creada amb els camps id, post_text, photourl, created_at, user_ip.  
+
+### 6. Desenvolupament de l’aplicació web
+
+**Fitxers principals:**
+
+index.php – Pàgina inicial + feed de publicacions.  
+upload.php – Lògica de pujada de posts amb imatge.  
+config.php – Configuració de BD i constants de seguretat.  
+admin.php – Panell d’administració.  
+delete.php – Eliminació de publicacions.  
+css/style.css – Disseny minimalista premium.  
+js/script.js – Lògica de frontend (previsualització, validacions, avisos).  
+assets/preview.svg – Icona de previsualització.  
+uploads/.htaccess – Protecció del directori de pujades.  
+
+**Funcionalitats implementades:**
+
+Creació de posts amb text i imatge.  
+Previsualització de la imatge abans de publicar.  
+Validació de mida (màx. 5 MB) i tipus (només imatges).  
+Feed de les últimes publicacions (ordenat per data).  
+Disseny responsive i modern.  
 
 ---
 
-## 🎯 ESTADO ACTUAL
+## TASQUES PENDENTS (BACKLOG)
+
+### 1. Assignar tasques no finalitzades
+
+3 subtasques.  
+
+Estimació curta (≈20 minuts).  
+
+Es completarà a l’inici del proper sprint per repartir clarament les noves històries d’usuari.  
+
+### 2. Panell d’administració i gestió de posts
+
+Login d’administrador amb contrasenya.  
+Estadístiques bàsiques: total de posts, posts amb imatge, posts d’avui.  
+Llistat de totes les publicacions.  
+Eliminació de posts (esborra registre en BD i arxiu d’imatge).  
+Tancament de sessió de l’administrador.  
+
+---
+
+## RESUM EXECUTIU
+
+| Categoria                 | Valor     |
+|---------------------------|-----------:|
+| Tasques completades       | 6          |
+| Tasques pendents          | 2          |
+| Percentatge completat     | 87,5 %     |
+| Fitxers de codi clau      | 9          |
+| Funcionalitat core         | 100 %     |
+
+**Estat del projecte:** Sprint 1 completat amb èxit; aplicació funcional i desplegada.
+
+---
+
+## ESTAT ACTUAL
 
 **Funciona:**
 
-Web accesible desde la IP pública de la instancia.  
-Creación de posts (texto + imagen).  
-Visualización de publicaciones en el feed.  
-Panel de administración operativo y capaz de borrar posts.  
-Accesos seguros mediante SSH y control de versiones con GitHub.  
+Web accessible des de la IP pública de la instància.  
+Creació de posts (text + imatge).  
+Visualització de publicacions al feed.  
+Panell d’administració operatiu i capaç d’esborrar posts.  
+Accessos segurs mitjançant SSH i control de versions amb GitHub.  
 
-**Pendiente:**
+**Pendent:**
 
-Formalizar la asignación de tareas para el siguiente sprint.  
+Formalitzar l’assignació de tasques per al següent sprint.  
 
 ---
 
-## 🏆 CONCLUSIÓN
+## CONCLUSIÓ
 
-El equipo (Javier, Marc y Adrián) ha completado el objetivo principal del Sprint 1: disponer de una primera versión funcional de Extagram G2, con infraestructura, backend, frontend y panel de administración operativos. Solo queda afinar la planificación del siguiente sprint y seguir añadiendo funcionalidades.
+L’equip (Javier, Marc i Adrián) ha completat l’objectiu principal del Sprint 1: disposar d’una primera versió funcional d’Extagram G2, amb infraestructura, backend, frontend i panell d’administració operatius. Només queda afinar la planificació del següent sprint i continuar afegint funcionalitats.
 
 ---
 
 **Acta redactada:** 19/01/2026 – 15:29 CET  
-**Responsable:** Equipo Extagram G2
+**Responsable:** Equip Extagram G2
