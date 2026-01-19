@@ -1,0 +1,123 @@
+# 📋 ACTA DE REUNIÓN - SPRINT 1
+
+**Proyecto:** Extagram G2  
+**Fecha:** 19 de Enero, 2026  
+**Hora:** 15:29 CET  
+
+---
+
+## 👥 ASISTENTES
+
+Javier  
+Marc  
+Adrián  
+
+---
+
+## ✅ TAREAS COMPLETADAS
+
+### 1. Crear repositorio GitHub ✅
+Repositorio creado y configurado.  
+Control de versiones establecido.  
+Acceso compartido entre el equipo.  
+
+### 2. Organizar IT Sprint ✅
+Sprint 1 planificado y ejecutado.  
+Tareas asignadas y revisadas.  
+Metodología ágil puesta en marcha.  
+
+### 3. Crear llaves SSH personales ✅
+SSH keys generadas para cada miembro.  
+Acceso seguro a la instancia configurado.  
+
+### 4. Crear la instancia a AWS ✅
+Instancia Ubuntu en AWS EC2 creada.  
+Disco de 8 GB configurado.  
+Security Groups abiertos en puertos 22, 80 y 443.  
+Firewall UFW activado.  
+
+### 5. Configuraciones principales de la instancia de AWS ✅
+LAMP Stack instalado (Apache, MySQL, PHP).  
+Base de datos extagram_db creada.  
+Usuario extagram_admin configurado.  
+Tabla posts creada con campos id, post_text, photourl, created_at, user_ip.  
+
+### 6. Desarrollo de la aplicación web ✅
+**Archivos principales:**
+
+index.php – Landing page + feed de publicaciones.  
+upload.php – Lógica de subida de posts con imagen.  
+config.php – Configuración de BD y constantes de seguridad.  
+admin.php – Panel de administración.  
+delete.php – Borrado de publicaciones.  
+css/style.css – Diseño premium minimalista.  
+js/script.js – Lógica de frontend (preview, validaciones, avisos).  
+assets/preview.svg – Icono de previsualización.  
+uploads/.htaccess – Protección del directorio de subidas.  
+
+**Funcionalidades implementadas:**
+
+Creación de posts con texto e imagen.  
+Previsualización de la imagen antes de publicar.  
+Validación de tamaño (máx. 5 MB) y tipo (solo imágenes).  
+Feed de las últimas publicaciones (ordenado por fecha).  
+Diseño responsive y moderno.  
+
+
+
+
+---
+
+## TAREAS PENDIENTES (BACKLOG)
+
+### 1. Asignar tareas no finalizadas🔵
+3 subtareas.  
+Estimación corta (≈20 minutos).  
+Se completará al inicio del próximo sprint para repartir claramente las nuevas historias de usuario.  
+
+### 2. Panel de administración y gestión de posts 🔵 
+Login de administrador con contraseña.  
+Estadísticas básicas: total posts, posts con imagen, posts de hoy.  
+Listado de todas las publicaciones.  
+Borrado de posts (elimina registro en BD y archivo de imagen).  
+Logout de sesión de admin.  
+---
+
+## 📊 RESUMEN EJECUTIVO
+
+| Categoría                | Valor      |
+|--------------------------|-----------:|
+| Tareas completadas       | 6          |
+| Tareas pendientes        | 2        |
+| Porcentaje completado    | 87.5 %     |
+| Archivos de código clave | 9          |
+| Funcionalidad core       | 100 %      |
+
+**Estado del proyecto:** ✅ Sprint 1 completado con éxito, aplicación funcional y desplegada.
+
+---
+
+## 🎯 ESTADO ACTUAL
+
+**Funciona:**
+
+Web accesible desde la IP pública de la instancia.  
+Creación de posts (texto + imagen).  
+Visualización de publicaciones en el feed.  
+Panel de administración operativo y capaz de borrar posts.  
+Accesos seguros mediante SSH y control de versiones con GitHub.  
+
+**Pendiente:**
+
+Formalizar la asignación de tareas para el siguiente sprint.  
+
+---
+
+## 🏆 CONCLUSIÓN
+
+El equipo (Javier, Marc y Adrián) ha completado el objetivo principal del Sprint 1: disponer de una primera versión funcional de Extagram G2, con infraestructura, backend, frontend y panel de administración operativos. Solo queda afinar la planificación del siguiente sprint y seguir añadiendo funcionalidades.
+
+---
+
+**Acta redactada:** 19/01/2026 – 15:29 CET  
+**Responsable:** Equipo Extagram G2
