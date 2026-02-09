@@ -1,51 +1,136 @@
-# PROJECTE 0.1 - Desplegament d’Extagram
-**Elaborat per:** *Adrián González, Marc Manzorro, Javier Vericat*  
-**Data:** Desembre 2025/26  
+# Extagram G2 - High Availability Social Platform
 
-## Índex proposat
-1. Introducció
-2. Estudi previ
-3. Sprints del projecte
-4. Estructura de l'arquitectura
-5. Disseny de xarxa
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Status](https://img.shields.io/badge/status-stable-green)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Deployed-FF9900?logo=amazonaws&logoColor=white)
+![PHP](https://img.shields.io/badge/Backend-PHP%208.2-777BB4?logo=php&logoColor=white)
 
-## Descripció del projecte
+> **Projecte 0.1:** Desplegament d’una infraestructura escalable basada en microserveis per a una xarxa social d'imatges.
 
-Aquest projecte consisteix en el desplegament d’una aplicació web anomenada **Extagram**, una aplicació semblant a una xarxa social que permet als usuaris publicar textos i pujar imatges [file:1].
+---
 
-L’aplicació està desenvolupada en **PHP** i utilitza una base de dades **MySQL** per emmagatzemar les publicacions i la informació de les imatges [file:1]. L’objectiu és implementar una arquitectura d’alta disponibilitat i escalabilitat, on diversos serveis (NGINX, PHP-FPM, MySQL) estan segregats en diferents contenidors Docker i interconnectats a través d’una xarxa, podent escollir el desplegament en un entorn de núvol [file:1].
+## Índex
+1. [Descripció del Projecte](#descripció-del-projecte)
+2. [Arquitectura del Sistema](#arquitectura-del-sistema)
+3. [Tecnologies Utilitzades](#tecnologies-utilitzades)
+4. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
+5. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
+6. [Equip de Desenvolupament](#equip-de-desenvolupament)
 
-## Objectiu principal
+---
 
-Fer el desplegament de l’aplicació Extagram amb alta disponibilitat i escalabilitat, seguint una arquitectura de microserveis amb Docker, on:
+## Descripció del Projecte
 
-- El trànsit web entra per un **proxy invers NGINX** (S1) que fa balanceig de càrrega entre els servidors PHP-FPM que gestionen la part dinàmica principal (S2 i S3) [file:1].
-- Un servidor PHP-FPM dedicat (S4) gestiona la càrrega d’imatges (`upload.php`) i les emmagatzema en un directori o en base de dades [file:1].
-- Els fitxers estàtics (imatges, CSS, SVG) es serveixen des de servidors NGINX separats (S5 per imatges, S6 per CSS/SVG) [file:1].
-- La base de dades MySQL (S7) emmagatzema les publicacions i replica el contingut de la carpeta d’imatges per garantir disponibilitat encara que el servidor d’imatges falli [file:1].
+**Extagram G2** és una aplicació web tipus xarxa social que permet als usuaris publicar text i imatges en temps real. Més enllà de la funcionalitat d'usuari, el valor principal d'aquest projecte resideix en la seva **infraestructura de sistemes**.
 
-En un segon projecte (P0.2) s’afegiran capes de seguretat i automatització al desplegament [file:1].
+L'objectiu ha estat migrar d'un entorn monolític (Sprint 1) a una arquitectura de **microserveis contenidoritzats d'alta disponibilitat** (Sprint 2 i 3). El sistema està dissenyat per suportar fallades, balancejar la càrrega de trànsit i segregar responsabilitats entre diferents nodes.
 
-## Estructura de l’arquitectura
+### Funcionalitats Principals
+* Feed de publicacions en temps real.
+* Pujada d'imatges amb validació de seguretat.
+* **Panell d'Administració:** Gestió de contingut i eliminació de posts.
+* **Alta Disponibilitat:** Replicació de dades i serveis redundants.
+* **Seguretat:** Connexió HTTPS i aïllament de xarxes internes.
 
-L’arquitectura proposada consta dels següents elements:
+---
 
-- **S1 (nginx:alpine)**: Proxy invers NGINX que rep totes les peticions del navegador i fa balanceig de càrrega per a `extagram.php` entre S2 i S3 [file:1].
-- **S2 i S3 (php:fpm)**: Servidors PHP-FPM que executen `extagram.php` (part dinàmica principal de la web) [file:1].
-- **S4 (php:fpm)**: Servidor PHP-FPM que executa `upload.php` i emmagatzema les imatges en un directori local o en base de dades [file:1].
-- **S5 (nginx:alpine)**: Servidor NGINX que serveix les imatges pujades a través de S4 (part estàtica: imatges) [file:1].
-- **S6 (nginx:alpine)**: Servidor NGINX que serveix els fitxers estàtics `style.css` i `preview.svg` (part estàtica: CSS/SVG) [file:1].
-- **S7 (mysql)**: Base de dades MySQL que conté la taula `posts` i replica el contingut de la carpeta d’imatges com a blobs en cas de fallada [file:1].
+## Arquitectura del Sistema
 
-## Sprints del projecte
+El projecte utilitza **Docker Compose** per orquestrar 7 serveis interconnectats, seguint un model de responsabilitat única. El trànsit és gestionat per un Proxy Invers que distribueix les peticions segons el tipus de contingut.
 
-El projecte es divideix en tres sprints quinzenals de 10 hores de duració cadascun:
+### Diagrama de Serveis (Microserveis)
 
-- **Sprint 1 (15/12/2025 - 19/01/2026)**: Anàlisi del projecte, tecnologies i disseny mínimament viable (MVP) en una sola màquina amb NGINX/Apache i PHP, capaç de carregar imatges via base de dades o carpeta [file:1].
-- **Sprint 2 (19/01/2026 - 27/01/2026)**: Segregació de l’aplicació en contenidors Docker locals, amb xarxa pont, proxy invers, balanceig i segregació de peticions [file:1].
-- **Sprint 3 (02/02/2026 - 10/02/2026)**: Finalització de l’arquitectura Docker, disseny de xarxa (amb Packet Tracer o similar), proves d’operativitat i caiguda de nodes redundants [file:1].
+| ID | Servei (Container) | Funció | Descripció Tècnica |
+| :--- | :--- | :--- | :--- |
+| **S1** | `nginx:alpine` | **Proxy Invers & Load Balancer** | Porta d'entrada (Gateway). Distribueix trànsit entre S2/S3 (App) i serveix estàtics des de S5/S6. |
+| **S2** | `php:fpm` | **App Logic (Node A)** | Processa la lògica principal (`extagram.php`). |
+| **S3** | `php:fpm` | **App Logic (Node B)** | Rèplica de S2 per a alta disponibilitat i balanceig. |
+| **S4** | `php:fpm` | **Upload Manager** | Microservei dedicat exclusivament a la càrrega d'imatges (`upload.php`). |
+| **S5** | `nginx:alpine` | **Static: Images** | Servidor optimitzat per servir les imatges pujades pels usuaris (`/uploads`). |
+| **S6** | `nginx:alpine` | **Static: Assets** | Servidor optimitzat per servir CSS, JS i SVGs del sistema. |
+| **S7** | `mysql:8.0` | **Base de Dades** | Persistència de dades (Taula `posts`). Accessible només des de la xarxa interna de backend. |
 
+### Disseny de Xarxa
+El sistema implementa xarxes Docker (`docker network`) per aïllar la base de dades del trànsit públic:
+* **Frontend Network:** Connecta S1, S5, S6.
+* **App Network:** Connecta S1, S2, S3, S4.
+* **Backend Network:** Connecta S2, S3, S4 amb S7 (Base de Dades).
 
+---
 
-Aquesta és la proposta d’índex per a la documentació del projecte en el repositori GitHub:
+## Tecnologies Utilitzades
 
+* **Infraestructura:** AWS EC2 (Ubuntu Server).
+* **Contenidors:** Docker & Docker Compose.
+* **Servidors Web:** NGINX (Reverse Proxy & Static Web Server).
+* **Backend:** PHP 8.2 (PHP-FPM).
+* **Base de Dades:** MySQL 8.0.
+* **Control de Versions:** Git & GitHub.
+* **Seguretat:** OpenSSL (Certificats), SSH Key Pairs.
+
+---
+
+## Full de Ruta (Sprints)
+
+El desenvolupament s'ha dut a terme seguint la metodologia **SCRUM** en 3 sprints quinzenals:
+
+### Sprint 1: MVP & Infraestructura Base
+* **Dates:** 15/12/2025 - 19/01/2026
+* Configuració inicial d'AWS (EC2, Security Groups).
+* Desenvolupament de l'aplicació monolítica (LAMP Stack).
+* Repositori GitHub i claus SSH.
+
+### Sprint 2: Dockerització i Microserveis
+* **Dates:** 19/01/2026 - 02/02/2026
+* Migració a contenidors Docker.
+* Implementació del Proxy Invers (S1) i segregació de serveis (S2-S7).
+* Implementació d'HTTPS i Domini propi.
+* Desenvolupament del **Panell d'Administració**.
+
+### Sprint 3: Consolidació i Xarxa
+* **Dates:** 02/02/2026 - 10/02/2026
+* Refactorització de la xarxa interna de Docker (Networking).
+* Testing d'estrès i validació de connectivitat.
+* Documentació tècnica final.
+
+---
+
+## Instal·lació i Desplegament
+
+Per desplegar el projecte en un entorn local o servidor:
+
+1.  **Clonar el repositori:**
+    ```bash
+    git clone https://github.com/AdrianGonzalez-ITB2425/P0.1-ASIXc2gA-G02
+    cd extagram-g2
+    ```
+
+2.  **Configurar variables d'entorn:**
+    Crea un fitxer `.env` a l'arrel basat en l'exemple per configurar les credencials de la BD.
+
+3.  **Aixecar l'arquitectura:**
+    ```bash
+    docker-compose up -d --build
+    ```
+
+4.  **Verificar l'estat dels contenidors:**
+    ```bash
+    docker-compose ps
+    ```
+    *Hauries de veure 7 contenidors actius (S1-S7).*
+
+---
+
+## Equip de Desenvolupament
+
+Projecte realitzat per l'equip **G2** (Curs 2025/2026):
+
+| Membre | Rols Principals |
+| :--- | :--- |
+| **Javier Vericat** | Scrum Master, Arquitectura Docker, Documentació |
+| **Adrián González** | DevOps, Infraestructura AWS, Frontend Assets (Nginx) |
+| **Marc Manzorro** | Backend Developer (PHP), Base de Dades, Seguretat |
+
+---
+*© 2026 Extagram G2 - Projecte 0.1 ASIXc2A - Institut Tecnològic de Barcelona.*
