@@ -56,6 +56,7 @@ El sistema implementa xarxes Docker (`docker network`) per aïllar la base de da
 * **Frontend Network:** Connecta S1, S5, S6.
 * **App Network:** Connecta S1, S2, S3, S4.
 * **Backend Network:** Connecta S2, S3, S4 amb S7 (Base de Dades).
+![foto esquema](./src/docker/esquema.png)
 
 ---
 
