@@ -116,6 +116,9 @@ Tancament de sessió de l’administrador.
 
 **Estat del projecte:** Sprint 1 completat amb èxit; aplicació funcional i desplegada.
 
+![foto](../../src/sprints/sr1-1.png)
+![foto](../../src/sprints/sr1-2.png)
+
 ---
 
 ## ESTAT ACTUAL

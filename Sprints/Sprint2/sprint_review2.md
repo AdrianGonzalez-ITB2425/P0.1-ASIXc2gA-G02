@@ -53,6 +53,9 @@ Adrián
 
 **Estat del projecte:** L'infraestructura és robusta i l'aplicació està en línia amb domini propi. El proper focus és la seguretat interna de la xarxa.
 
+![foto](../../src/sprints/sr2-1.png)
+![foto](../../src/sprints/sr2-2.png)
+![foto](../../src/sprints/sr2-3.png)
 ---
 
 ## ESTAT ACTUAL
