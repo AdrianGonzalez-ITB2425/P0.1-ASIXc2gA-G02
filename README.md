@@ -12,11 +12,13 @@
 
 ## Índex
 1. [Descripció del Projecte](#descripció-del-projecte)
-2. [Arquitectura del Sistema](#arquitectura-del-sistema)
-3. [Tecnologies Utilitzades](#tecnologies-utilitzades)
-4. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
-5. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
-6. [Equip de Desenvolupament](#equip-de-desenvolupament)
+2. [Sprints](./sprints.md)
+3. [Investigació](./Investigacio.md)
+4. [Arquitectura del Sistema](#arquitectura-del-sistema)
+5. [Tecnologies Utilitzades](#tecnologies-utilitzades)
+6. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
+7. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
+8. [Equip de Desenvolupament](#equip-de-desenvolupament)
 
 ---
 
@@ -104,7 +106,7 @@ Per desplegar el projecte en un entorn local o servidor:
 1.  **Clonar el repositori:**
     ```bash
     git clone https://github.com/AdrianGonzalez-ITB2425/P0.1-ASIXc2gA-G02
-    cd extagram-g2
+    cd extagram-docker
     ```
 
 2.  **Configurar variables d'entorn:**
