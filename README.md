@@ -128,8 +128,8 @@ Projecte realitzat per l'equip **G2** (Curs 2025/2026):
 
 | Membre | Rols Principals |
 | :--- | :--- |
-| **Javier Vericat** | Scrum Master, Arquitectura Docker, Documentació |
-| **Adrián González** | DevOps, Infraestructura AWS, Frontend Assets (Nginx) |
+| **Javier Vericat** | Scrum Master, Documentació |
+| **Adrián González** | DevOps, Infraestructura AWS,  Arquitectura Docker, Frontend Assets (Nginx) |
 | **Marc Manzorro** | Backend Developer (PHP), Base de Dades, Seguretat |
 
 ---
