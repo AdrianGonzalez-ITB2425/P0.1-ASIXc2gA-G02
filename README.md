@@ -16,9 +16,11 @@
 3. [Investigació](./Investigacio.md)
 4. [Arquitectura del Sistema](#arquitectura-del-sistema)
 5. [Tecnologies Utilitzades](#tecnologies-utilitzades)
-6. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
-7. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
-8. [Equip de Desenvolupament](#equip-de-desenvolupament)
+6. [Serveis desplegats](#serveis-desplegats)
+    * [Aplicació Web](./Web/web.md)
+7. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
+8. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
+9. [Equip de Desenvolupament](#equip-de-desenvolupament)
 
 ---
 
