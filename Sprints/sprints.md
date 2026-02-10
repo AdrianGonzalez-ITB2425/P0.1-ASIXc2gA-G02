@@ -31,4 +31,4 @@ Fase final centrada en la seguretat de la xarxa interna (networking), proves de 
 Per al seguiment de les tasques i el control del backlog, hem utilitzat un tauler Kanban digital (ProofHub), permetent-nos visualitzar l'estat de cada funcionalitat (To Do, Doing, Review, Done) en temps real.
 
 
-[Torna a l'Inici](./README.md)
+[Torna a l'Inici](../README.md)
