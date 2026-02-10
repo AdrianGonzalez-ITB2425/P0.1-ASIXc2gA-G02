@@ -12,8 +12,8 @@ A continuació es detalla la documentació oficial generada durant cada fase del
 
 ### Sprint 1: Desplegament Inicial (MVP)
 En aquesta primera fase, l'objectiu va ser establir la infraestructura base a AWS i desplegar l'aplicació en una arquitectura monolítica funcional.
-* [📄 Sprint Planning 1](./Sprints/Sprint1/sprint_planning.md) – Definició de l'stack tecnològic i rols.
-* [📝 Sprint Review 1](./Sprints/Sprint1/sprint_review1.md) – Validació del funcionament en instància única.
+* [ Sprint Planning 1](./Sprints/Sprint1/sprint_planning1.md) – Definició de l'stack tecnològic i rols.
+* [ Sprint Review 1](./Sprints/Sprint1/sprint_review1.md) – Validació del funcionament en instància única.
 
 ### Sprint 2: Dockerització i Microserveis
 La fase més crítica, on es va migrar l'aplicació a contenidors, implementant el Proxy Invers i segregant serveis.
@@ -29,3 +29,6 @@ Fase final centrada en la seguretat de la xarxa interna (networking), proves de 
 
 ## Eines de Gestió
 Per al seguiment de les tasques i el control del backlog, hem utilitzat un tauler Kanban digital (ProofHub), permetent-nos visualitzar l'estat de cada funcionalitat (To Do, Doing, Review, Done) en temps real.
+
+
+[Torna a l'Inici](./README.md)

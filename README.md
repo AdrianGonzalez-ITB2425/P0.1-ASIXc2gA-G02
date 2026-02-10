@@ -1,4 +1,4 @@
-# Extagram G2 - High Availability Social Platform
+# Extagram Grup 2
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Status](https://img.shields.io/badge/status-stable-green)
@@ -15,12 +15,13 @@
 2. [Sprints](./sprints.md)
 3. [Investigació](./Investigacio.md)
 4. [Arquitectura del Sistema](#arquitectura-del-sistema)
-5. [Tecnologies Utilitzades](#tecnologies-utilitzades)
-6. [Serveis desplegats](#serveis-desplegats)
+5. [Securització del servei (HTTPS)](./config/duckdns.md)
+6. [Tecnologies Utilitzades](#tecnologies-utilitzades)
+7. [Serveis desplegats](#serveis-desplegats)
     * [Aplicació Web](./Web/web.md)
-7. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
-8. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
-9. [Equip de Desenvolupament](#equip-de-desenvolupament)
+8. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
+9. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
+10. [Equip de Desenvolupament](#equip-de-desenvolupament)
 
 ---
 

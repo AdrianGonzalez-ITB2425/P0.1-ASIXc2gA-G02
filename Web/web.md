@@ -216,3 +216,6 @@ De cara a futurs sprints o al projecte P0.2, es podrien considerar:
 ---
 
 En conjunt, la web d'Extagram representa una implementació sòlida d'una aplicació PHP moderna sobre Docker, amb una arquitectura clara, bones pràctiques bàsiques de seguretat i una funcionalitat plenament operativa per a l'usuari final i per a l'administrador del sistema.
+
+
+[Torna a l'Inici](../README.md)

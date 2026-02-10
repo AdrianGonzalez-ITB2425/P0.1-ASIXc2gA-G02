@@ -86,3 +86,6 @@ A més, en cas de problema, es pot fer diagnòstic des d’un únic punt:
 - Logs del sistema (journal, syslog).  
 - Logs de Nginx, PHP-FPM i MySQL.  
 - Logs i estat dels contenidors Docker.
+
+
+[Torna a l'Inici](./README.md)

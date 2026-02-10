@@ -8,11 +8,9 @@
 
 ## ASSISTENTS
 
-Javier 
-
-Marc  
-
-Adrián 
+Adrián González  
+Javier Vericat  
+Marc Manzorro  
 
 ---
 
@@ -103,3 +101,5 @@ L’equip ha definit i assignat totes les tasques necessàries per arrencar el p
 
 **Acta redactada:** 15/12/2025 – 15:15 CET  
 **Aprovat per:** Equip Extagram G2
+
+[Torna a l'Inici](../../README.md)

@@ -8,11 +8,9 @@
 
 ## ASSISTENTS
 
-Javier  
-
-Marc  
-
-Adrián  
+Adrián González  
+Javier Vericat  
+Marc Manzorro  
 
 ---
 
@@ -145,3 +143,6 @@ L’equip (Javier, Marc i Adrián) ha completat l’objectiu principal del Sprin
 
 **Acta redactada:** 19/01/2026 – 15:29 CET  
 **Responsable:** Equip Extagram G2
+
+
+[Torna a l'Inici](../../README.md)

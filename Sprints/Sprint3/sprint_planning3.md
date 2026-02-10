@@ -8,9 +8,9 @@
 
 ## ASSISTENTS
 
-Javier  
-Adrián  
-Marc  
+Adrián González  
+Javier Vericat  
+Marc Manzorro  
 
 ---
 
@@ -78,3 +78,6 @@ Aquest és un sprint curt i intensiu (1 setmana) enfocat a la qualitat. No s'afe
 
 **Acta redactada:** 03/02/2026 – 15:15 CET  
 **Aprovat per:** Equip Extagram G2
+
+
+[Torna a l'Inici](../../README.md)

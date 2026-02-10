@@ -72,7 +72,7 @@ L'objectiu fonamental d'aquest segon sprint és la **dockerització completa de 
 **Afegir seguretat a la web** Implementació de mesures de seguretat (SSL/HTTPS i restriccions bàsiques).  
 *Responsable:* Marc.  
 *Data límit:* 20 de gener.
-
+s
 **Ordenar ProofHub i Sprint Planning 2** Gestió administrativa de les tasques i documentació del sprint actual.  
 *Responsable:* Javier.
 
@@ -110,3 +110,6 @@ L'equip inicia la fase de dockerització amb l'objectiu de tenir una arquitectur
 
 **Acta redactada:** 20/01/2026 – 15:15 CET  
 **Aprovat per:** Equip Extagram G2
+
+
+[Torna a l'Inici](../../README.md)

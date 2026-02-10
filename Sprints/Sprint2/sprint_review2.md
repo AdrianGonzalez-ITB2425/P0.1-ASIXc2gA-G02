@@ -8,8 +8,8 @@
 
 ## ASSISTENTS
 
-Javier  
-Adrián  
+Adrián González  
+Javier Vericat  
 
 ---
 
@@ -79,3 +79,6 @@ L'equip ha tancat amb èxit la fase de desplegament professional. Amb el sistema
 
 **Acta redactada:** 02/02/2026 – 15:09 CET  
 **Responsable:** Equip Extagram G2
+
+
+[Torna a l'Inici](../../README.md)
