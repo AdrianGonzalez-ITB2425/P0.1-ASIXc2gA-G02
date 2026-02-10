@@ -12,7 +12,7 @@
 
 ## Índex
 1. [Descripció del Projecte](#descripció-del-projecte)
-2. [Sprints](./sprints.md)
+2. [Sprints](./Sprints/sprints.md)
 3. [Investigació](./Investigacio.md)
 4. [Arquitectura del Sistema](#arquitectura-del-sistema)
 5. [Securització del servei (HTTPS)](./config/duckdns.md)

@@ -12,18 +12,18 @@ A continuació es detalla la documentació oficial generada durant cada fase del
 
 ### Sprint 1: Desplegament Inicial (MVP)
 En aquesta primera fase, l'objectiu va ser establir la infraestructura base a AWS i desplegar l'aplicació en una arquitectura monolítica funcional.
-* [ Sprint Planning 1](./Sprints/Sprint1/sprint_planning1.md) – Definició de l'stack tecnològic i rols.
-* [ Sprint Review 1](./Sprints/Sprint1/sprint_review1.md) – Validació del funcionament en instància única.
+* [ Sprint Planning 1](./Sprint1/sprint_planning1.md) – Definició de l'stack tecnològic i rols.
+* [ Sprint Review 1](./Sprint1/sprint_review1.md) – Validació del funcionament en instància única.
 
 ### Sprint 2: Dockerització i Microserveis
 La fase més crítica, on es va migrar l'aplicació a contenidors, implementant el Proxy Invers i segregant serveis.
-* [ Sprint Planning 2](./Sprints/Sprint2/sprint_planning2.md) – Disseny de l'orquestració amb Docker Compose.
-* [ Sprint Review 2](./Sprints/Sprint2/sprint_review2.md) – Desplegament de contenidors i domini HTTPS.
+* [ Sprint Planning 2](./Sprint2/sprint_planning2.md) – Disseny de l'orquestració amb Docker Compose.
+* [ Sprint Review 2](./Sprint2/sprint_review2.md) – Desplegament de contenidors i domini HTTPS.
 
 ### Sprint 3: Xarxa i Consolidació
 Fase final centrada en la seguretat de la xarxa interna (networking), proves de càrrega i documentació tècnica.
-* [ Sprint Planning 3](./Sprints/Sprint3/sprint_planning3.md) – Planificació de la topologia de xarxa i testing.
-* [ Sprint Review 3](./Sprints/Sprint3/sprint_review3.md) – Tancament del projecte i validació final.
+* [ Sprint Planning 3](./Sprint3/sprint_planning3.md) – Planificació de la topologia de xarxa i testing.
+* [ Sprint Review 3](./Sprint3/sprint_review3.md) – Tancament del projecte i validació final.
 
 ---
 
