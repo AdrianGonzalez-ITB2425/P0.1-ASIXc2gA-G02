@@ -15,13 +15,14 @@
 2. [Sprints](./Sprints/sprints.md)
 3. [Investigació](./Investigacio.md)
 4. [Arquitectura del Sistema](#arquitectura-del-sistema)
-5. [Securització del servei (HTTPS)](./config/duckdns.md)
-6. [Tecnologies Utilitzades](#tecnologies-utilitzades)
-7. [Serveis desplegats](#serveis-desplegats)
+5. [Seguretat](./config/seguridad.md)
+6. [Securització del servei (HTTPS)](./config/duckdns.md)
+7. [Tecnologies Utilitzades](#tecnologies-utilitzades)
+8. [Serveis desplegats](#serveis-desplegats)
     * [Aplicació Web](./Web/web.md)
-8. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
-9. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
-10. [Equip de Desenvolupament](#equip-de-desenvolupament)
+9. [Full de Ruta (Roadmap)](#full-de-ruta-sprints)
+10. [Instal·lació i Desplegament](#instal·lació-i-desplegament)
+11. [Equip de Desenvolupament](#equip-de-desenvolupament)
 
 ---
 
