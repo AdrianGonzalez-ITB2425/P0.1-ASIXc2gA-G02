@@ -70,6 +70,9 @@ Marc Manzorro
 
 ---
 
+![Web Final](../../src/sprints/sr4-1.png)
+![Web Final](../../src/sprints/sr4-2.png)
+
 ## ESTAT ACTUAL
 
 **Funciona:**  
